@@ -1,0 +1,12 @@
+.center-align {
+    text-align: center;
+}
+
+.button-style {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: darkseagreen;
+    border: 0px;
+}

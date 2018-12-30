@@ -3,10 +3,26 @@
 }
 
 .button-style {
-    padding-left: 60px;
-    padding-right: 60px;
+    font-size: 60px;
+    padding-left: 85px;
+    padding-right: 85px;
     padding-top: 45px;
     padding-bottom: 45px;
     background-color: darkseagreen;
     border: 0px;
 }
+
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+table {
+    width:100%;
+ }
+ td {
+   width:33.3333%;
+   height:33.3333%;
+ }

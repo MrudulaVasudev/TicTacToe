@@ -1,5 +1,7 @@
 var value = "O";
 
+/* Disabling the buttons already clicked */
+
 var disableTheButtons = function() {
     var button1 = document.getElementById("1").value;
     var button2 = document.getElementById("2").value;
@@ -22,6 +24,8 @@ var disableTheButtons = function() {
     button9.disabled = true;
 }
 
+/* When the winner is found */
+
 var successAlert = function(winner) {
     disableTheButtons();
     var successText = document.getElementById("successText");
@@ -33,6 +37,8 @@ var successAlert = function(winner) {
     popup.style.visibility = "visible";
     overlay.style.visibility = "visible";
 }
+
+/* Winner */
 
 var checkForWinner = function() {
     var bgColor = 'steelblue';
@@ -72,6 +78,8 @@ var checkForWinner = function() {
         successAlert(button3.value);
     }
 }
+
+/* Finding the box that is clicked */
 
 var checkNumber = function (number, value) {
     let button;
@@ -124,6 +132,8 @@ var checkNumber = function (number, value) {
     checkForWinner();
 }
 
+/* The buttons already clicked will be disabled to be further clicked */
+
 var disableButtons = function() {
     var button1 = document.getElementById("1");
     var button2 = document.getElementById("2");
@@ -144,6 +154,8 @@ var disableButtons = function() {
     button8.disabled = true;
     button9.disabled = true;
 }
+
+/* Clicking on reset to play a new game */
 
 var reset = function() {
     var button1 = document.getElementById("1");
@@ -191,6 +203,8 @@ var reset = function() {
     warning.classList.remove("alert-style");
 }
 
+/* On popup disappearing */
+
 var popupDismiss = function() {
     var popup = document.getElementById("popup");
     var overlay = document.getElementById("overlay");
@@ -202,6 +216,8 @@ var popupDismiss = function() {
     warning.classList = "alert alert-warning alert-style";
     warning.innerHTML = "<strong>Warning!</strong> Hit reset to play again."
 }
+
+/* Clicking the squares */
 
 var buttonClick = function (number) {
     var bgColor;

@@ -10,7 +10,7 @@ It is a two player game. The First player is X and the second player is O.
 ## Prerequisites
 
 1. Download jQuery library - https://jquery.com/download/ - Place this in the root directory of the project. Rename the file to <strong>jQuery.js</strong>. 
-2. Download bootstrap - https://getbootstrap.com/docs/4.0/getting-started/download/. Extract the zipped file. Place the entire folder in the root directory of the project. Rename the file to <strong>bootstrap</bootstrap>
+2. Download bootstrap - https://getbootstrap.com/docs/4.0/getting-started/download/. Extract the zipped file. Place the entire folder in the root directory of the project. Rename the file to <strong>bootstrap</strong>
 
 ## Run the project
 

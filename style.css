@@ -55,3 +55,17 @@ table {
  .alert-style {
      width: fit-content;
  }
+
+ .open-sans {
+     font-family: opensans;
+ }
+
+ .box-style {
+     text-decoration: underline;
+     color: teal;
+ }
+
+
+ input:hover {
+    background-color: seagreen;
+ }

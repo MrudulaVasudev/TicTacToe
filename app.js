@@ -1,4 +1,4 @@
-var value = "0";
+var value = "O";
 
 var disableTheButtons = function() {
     var button1 = document.getElementById("1").value;
@@ -46,28 +46,28 @@ var checkForWinner = function() {
     var button8 = document.getElementById("8");
     var button9 = document.getElementById("9");
 
-    if((button1.value == "X" || button1.value == "0") && (button1.value == button2.value) && (button2.value == button3.value)) {
+    if((button1.value == "X" || button1.value == "O") && (button1.value == button2.value) && (button2.value == button3.value)) {
         button1.style.backgroundColor = button2.style.backgroundColor = button3.style.backgroundColor = bgColor;
         successAlert(button1);
-    } else if((button1.value == "X" || button1.value == "0") && (button1.value == button4.value) && (button4.value == button7.value)) {
+    } else if((button1.value == "X" || button1.value == "O") && (button1.value == button4.value) && (button4.value == button7.value)) {
         button1.style.backgroundColor = button4.style.backgroundColor = button7.style.backgroundColor = bgColor;
         successAlert(button1);
-    } else if((button3.value == "X" || button3.value == "0") && (button3.value == button6.value) && (button6.value == button9.value)) {
+    } else if((button3.value == "X" || button3.value == "O") && (button3.value == button6.value) && (button6.value == button9.value)) {
         button3.style.backgroundColor = button6.style.backgroundColor = button9.style.backgroundColor = bgColor;
         successAlert(button3);
-    } else if((button7.value == "X" || button7.value == "0") && (button7.value == button8.value) && (button8.value == button9.value)) {
+    } else if((button7.value == "X" || button7.value == "O") && (button7.value == button8.value) && (button8.value == button9.value)) {
         button7.style.backgroundColor = button8.style.backgroundColor = button9.style.backgroundColor = bgColor;
         successAlert(button7);
-    } else if((button2.value == "X" || button2.value == "0") && (button2.value == button5.value) && (button5.value == button8.value)) {
+    } else if((button2.value == "X" || button2.value == "O") && (button2.value == button5.value) && (button5.value == button8.value)) {
         button2.style.backgroundColor = button5.style.backgroundColor = button8.style.backgroundColor = bgColor;
         successAlert(button2);
-    } else if((button4.value == "X" || button4.value == "0") && (button4.value == button5.value) && (button5.value == button6.value)) {
+    } else if((button4.value == "X" || button4.value == "O") && (button4.value == button5.value) && (button5.value == button6.value)) {
         button4.style.backgroundColor = button5.style.backgroundColor = button6.style.backgroundColor = bgColor;
         successAlert(button4)
-    } else if((button1.value == "X" || button1.value == "0") && (button1.value == button5.value) && (button5.value == button9.value)) {
+    } else if((button1.value == "X" || button1.value == "O") && (button1.value == button5.value) && (button5.value == button9.value)) {
         button1.style.backgroundColor = button5.style.backgroundColor = button9.style.backgroundColor = bgColor;
         successAlert(button1);
-    } else if((button3.value == "X" || button3.value == "0") && (button3.value == button5.value) && (button5.value == button7.value)) {
+    } else if((button3.value == "X" || button3.value == "O") && (button3.value == button5.value) && (button5.value == button7.value)) {
         button3.style.backgroundColor = button5.style.backgroundColor = button7.style.backgroundColor = bgColor;
         successAlert(button3);
     }
@@ -206,9 +206,9 @@ var popupDismiss = function() {
 var buttonClick = function (number) {
     var bgColor;
     if (value === "X") {
-        value = "0";
+        value = "O";
         checkNumber(number, value);
-    } else if (value === "0") {
+    } else if (value === "O") {
         value = "X";
         checkNumber(number, value);
     }

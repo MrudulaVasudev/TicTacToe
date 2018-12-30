@@ -25,45 +25,63 @@
             <div class="col-sm-3">
 
             </div>
-            <div class="col-sm-4">
-                    <table>
-                            <tr>
-                                <td>
-                                    <input type="button" class="button-style" id='1' onclick="buttonClick(1)" value=' '>
-                                </td>
-                                <td>
-                                    <input type="button" class="button-style" id='2' onclick="buttonClick(2)" value=' '>
-                                </td>
-                                <td>
-                                    <input type="button" class="button-style" id='3' onclick="buttonClick(3)" value=' '>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="button" class="button-style" id='4' onclick="buttonClick(4)" value=' '>
-                                </td>
-                                <td>
-                                    <input type="button" class="button-style" id='5' onclick="buttonClick(5)" value=' '>
-                                </td>
-                                <td>
-                                    <input type="button" class="button-style" id='6' onclick="buttonClick(6)" value=' '>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="button" class="button-style" id='7' onclick="buttonClick(7)" value=' '>
-                                </td>
-                                <td>
-                                    <input type="button" class="button-style" id='8' onclick="buttonClick(8)" value=' '>
-                                </td>
-                                <td>
-                                    <input type="button" class="button-style" id='9' onclick="buttonClick(9)" value=' '>
-                                </td>
-                            </tr>
-                        </table>
+            <div class="col-sm-6">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" class="button-style" id='1' onclick="buttonClick(1)" value=' '>
+                        </td>
+                        <td>
+                            <input type="button" class="button-style" id='2' onclick="buttonClick(2)" value=' '>
+                        </td>
+                        <td>
+                            <input type="button" class="button-style" id='3' onclick="buttonClick(3)" value=' '>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="button-style" id='4' onclick="buttonClick(4)" value=' '>
+                        </td>
+                        <td>
+                            <input type="button" class="button-style" id='5' onclick="buttonClick(5)" value=' '>
+                        </td>
+                        <td>
+                            <input type="button" class="button-style" id='6' onclick="buttonClick(6)" value=' '>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="button-style" id='7' onclick="buttonClick(7)" value=' '>
+                        </td>
+                        <td>
+                            <input type="button" class="button-style" id='8' onclick="buttonClick(8)" value=' '>
+                        </td>
+                        <td>
+                            <input type="button" class="button-style" id='9' onclick="buttonClick(9)" value=' '>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-10">
+                           <div id="warningMessage"></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-outline-warning btn-lg" onclick="reset()">Reset</button>
+                     </div>
+                </div>
+            
+                <div></div>
             </div>
         </div>
-        
+        <section align="center" id="popup">
+            <p id="successText"></p>
+            <button id="OkButton" onclick="popupDismiss()" class="btn btn-info">Ok</button>
+        </section>
+
+        <section id="overlay"></section>
+
     </div>
 
     <script src="jQuery.js"></script>

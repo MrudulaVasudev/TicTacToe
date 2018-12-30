@@ -48,28 +48,28 @@ var checkForWinner = function() {
 
     if((button1.value == "X" || button1.value == "O") && (button1.value == button2.value) && (button2.value == button3.value)) {
         button1.style.backgroundColor = button2.style.backgroundColor = button3.style.backgroundColor = bgColor;
-        successAlert(button1);
+        successAlert(button1.value);
     } else if((button1.value == "X" || button1.value == "O") && (button1.value == button4.value) && (button4.value == button7.value)) {
         button1.style.backgroundColor = button4.style.backgroundColor = button7.style.backgroundColor = bgColor;
-        successAlert(button1);
+        successAlert(button1.value);
     } else if((button3.value == "X" || button3.value == "O") && (button3.value == button6.value) && (button6.value == button9.value)) {
         button3.style.backgroundColor = button6.style.backgroundColor = button9.style.backgroundColor = bgColor;
-        successAlert(button3);
+        successAlert(button3.value);
     } else if((button7.value == "X" || button7.value == "O") && (button7.value == button8.value) && (button8.value == button9.value)) {
         button7.style.backgroundColor = button8.style.backgroundColor = button9.style.backgroundColor = bgColor;
-        successAlert(button7);
+        successAlert(button7.value);
     } else if((button2.value == "X" || button2.value == "O") && (button2.value == button5.value) && (button5.value == button8.value)) {
         button2.style.backgroundColor = button5.style.backgroundColor = button8.style.backgroundColor = bgColor;
-        successAlert(button2);
+        successAlert(button2.value);
     } else if((button4.value == "X" || button4.value == "O") && (button4.value == button5.value) && (button5.value == button6.value)) {
         button4.style.backgroundColor = button5.style.backgroundColor = button6.style.backgroundColor = bgColor;
-        successAlert(button4)
+        successAlert(button4.value)
     } else if((button1.value == "X" || button1.value == "O") && (button1.value == button5.value) && (button5.value == button9.value)) {
         button1.style.backgroundColor = button5.style.backgroundColor = button9.style.backgroundColor = bgColor;
-        successAlert(button1);
+        successAlert(button1.value);
     } else if((button3.value == "X" || button3.value == "O") && (button3.value == button5.value) && (button5.value == button7.value)) {
         button3.style.backgroundColor = button5.style.backgroundColor = button7.style.backgroundColor = bgColor;
-        successAlert(button3);
+        successAlert(button3.value);
     }
 }
 
